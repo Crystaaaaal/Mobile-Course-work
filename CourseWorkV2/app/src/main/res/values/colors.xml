@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Black">#FF000000</color>
+    <color name="White">#FFFFFFFF</color>
+
+
+    <color name="Red">#F14065</color>
+
+    <color name="SendGray">#D6C6B4</color>
+    <color name="LightGray">#D49D85</color>
+    <color name="DrakGray">#7e6468</color>
+    <color name="Night">#3D4152</color>
+    <color name="CoolRed">#511A29</color>
+
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/custom_dialog_layout"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/textViewSearchText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Введите данные работника"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSearchName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Имя"
+        android:textColorHint="@color/Black"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/textViewSearchText"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSearchText" />
+
+    <EditText
+        android:id="@+id/editTextSearchSecondName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:textColorHint="@color/Black"
+        android:hint="Фамилия"
+        app:layout_constraintStart_toStartOf="@+id/editTextSearchName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearchName" />
+
+    <EditText
+        android:id="@+id/editTextSearchFatherName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:textColorHint="@color/Black"
+        android:hint="Отчетсво"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/editTextSearchSecondName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearchSecondName" />
+
+    <Button
+        android:id="@+id/buttonNo"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Отменить"
+        android:backgroundTint="@color/DrakGray"
+        app:layout_constraintStart_toStartOf="@+id/editTextSearchFatherName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearchFatherName" />
+
+    <Button
+        android:id="@+id/buttonYes"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Найти"
+        android:backgroundTint="@color/DrakGray"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSearchFatherName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearchFatherName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

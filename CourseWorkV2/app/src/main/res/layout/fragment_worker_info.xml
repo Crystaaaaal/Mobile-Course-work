@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/SendGray">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="79dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewSecondName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Фамилия"
+                android:textSize="20dp"
+                android:textColor="@color/Black"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editTextWorkerSecondName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="Фамилия"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSecondName" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Имя"
+                android:textSize="20dp"
+                android:textColor="@color/Black"
+                app:layout_constraintTop_toBottomOf="@+id/editTextWorkerSecondName" />
+
+            <EditText
+                android:id="@+id/editTextWorkerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="Имя"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+
+            <TextView
+                android:id="@+id/textViewFatherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Отчество"
+                android:textSize="20dp"
+                android:textColor="@color/Black"
+                app:layout_constraintTop_toBottomOf="@+id/editTextWorkerName" />
+
+            <EditText
+                android:id="@+id/editTextWorkerFatherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="Отчество"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFatherName" />
+
+
+            <TextView
+                android:id="@+id/textViewPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Номер телефона"
+                android:textSize="20dp"
+                android:textColor="@color/Black"
+                app:layout_constraintTop_toBottomOf="@+id/editTextWorkerFatherName" />
+
+            <EditText
+                android:id="@+id/editTextWorkerPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="Номер телефона"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewPhoneNumber" />
+
+
+            <TextView
+                android:id="@+id/textViewMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Почта"
+                android:textSize="20dp"
+                android:textColor="@color/Black"
+                app:layout_constraintTop_toBottomOf="@+id/editTextWorkerPhoneNumber" />
+
+            <EditText
+                android:id="@+id/editTextWorkerMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="Почта"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:textColor="@color/Black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColorHint="@color/Black"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMail" />
+
+
+            <TextView
+                android:id="@+id/textViewAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Возраст"
+                android:textSize="20dp"
+                android:textColor="@color/Black"
+                app:layout_constraintTop_toBottomOf="@+id/editTextWorkerDateOfBirth" />
+
+
+            <EditText
+                android:id="@+id/editTextWorkerAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="Возраст"
+                android:textColor="@color/Black"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:textColorHint="@color/Black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewAge" />
+
+            <TextView
+                android:id="@+id/textViewDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Дата рождения"
+                android:textSize="20dp"
+                android:textColor="@color/Black"
+                app:layout_constraintTop_toBottomOf="@+id/editTextWorkerMail" />
+
+            <EditText
+                android:id="@+id/editTextWorkerDateOfBirth"
+                android:layout_width="281dp"
+                android:layout_height="53dp"
+                android:ems="20"
+                android:hint="Дата рождения"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColor="@color/Black"
+                android:textColorHint="@color/Black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDateOfBirth" />
+
+            <Button
+                android:id="@+id/buttonCalendar"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/icon_calendar60"
+                app:layout_constraintBottom_toBottomOf="@+id/editTextWorkerDateOfBirth"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:backgroundTint="@color/DrakGray"
+                app:layout_constraintStart_toEndOf="@+id/editTextWorkerDateOfBirth"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDateOfBirth"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/buttonSaveWorker"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Сохранить"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:backgroundTint="@color/DrakGray"
+                app:layout_constraintTop_toBottomOf="@+id/editTextWorkerAge" />
+
+            <Button
+                android:id="@+id/buttonDeleteWorker"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Red"
+                android:text="Удалить"
+                android:textColor="@color/Black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonSaveWorker" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
